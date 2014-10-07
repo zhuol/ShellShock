@@ -1,0 +1,7 @@
+<init-param>
+  <param-name>executable</param-name>
+  <param-value>/bin/bash -c</param-value>
+  <!--<param-value>/home/zhuol/perl5/perlbrew/build/perl-5.16.3/perl</param-value>-->
+</init-param>
+
+#on glassfish
